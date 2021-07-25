@@ -1,0 +1,54 @@
+﻿<Window x:Class="UsersApp.AddingPictures"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Кабинет пользователя" Height="678" Width="560">
+    <Grid Background="#ffdadada" Margin="0,0,3.333,8.667">
+        <Border MinWidth="400" Margin="15,26,10,10" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20" Height="604">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+
+                <TextBlock Text="Добавление" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" ></TextBlock>
+
+                <Button Content="Добавить изображение" Margin="0 20" Click="Button_kartina"></Button>
+                <TextBlock x:Name="aff" FontSize="15" FontWeight="Light" Margin="0 20 0 10" />
+
+
+                <TextBlock Text="Выберите дату и время поступления картины" FontSize="15" FontWeight="Light" Margin="0 20 0 10" />
+                <WrapPanel>
+                    <DatePicker x:Name="da"
+                                HorizontalAlignment="Left"
+  Width="100"
+  materialDesign:HintAssist.Hint="Pick Date"
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                    <materialDesign:TimePicker
+                        HorizontalAlignment="Left"
+  Is24Hours="True"
+  x:Name="PresetTimePicker"
+  Width="103" Height="37"
+   />
+                </WrapPanel>
+                <WrapPanel>
+                    <ToggleButton x:Name="perekl"
+  Style="{StaticResource MaterialDesignSwitchToggleButton}"
+  ToolTip="MaterialDesignSwitchToggleButton"
+  IsChecked="False" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Наличие картины" FontSize="15" FontWeight="Light" Margin="20 0 0 0" />
+
+                </WrapPanel>
+                <TextBox x:Name="textBoxNazv" materialDesign:HintAssist.Hint="Введите название" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <TextBox x:Name="textBoxAvtor" materialDesign:HintAssist.Hint="Введите автора" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <TextBox x:Name="textBoxGod" materialDesign:HintAssist.Hint="Введите год" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <Button Content="Добавить" Margin="0 20" Click="Dobavit"></Button>
+
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>

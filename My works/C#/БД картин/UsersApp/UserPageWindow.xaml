@@ -1,0 +1,50 @@
+﻿<Window x:Class="UsersApp.UserPageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Кабинет пользователя" Height="350" Width="800"
+        ResizeMode="NoResize">
+    <Grid Background="#ffdadada">
+        <Border MinHeight="300" MinWidth="700" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="800" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Кабинет пользователя" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" ></TextBlock>
+                <WrapPanel>
+                 <Button HorizontalAlignment="Left" Content="Добавить"  Click="Button_dobavit" Width="129"/>
+                <Button HorizontalAlignment="Left" Content="Удалить" Click="Button_udalit" Width="129"></Button>
+                    <Button HorizontalAlignment="Left" Content="Просмотреть картины" Click="Button_kart" Width="194"></Button>
+                </WrapPanel>
+                <ScrollViewer VerticalScrollBarVisibility ="Visible" HorizontalScrollBarVisibility="Auto" Height="145" Margin="0,0,-0.333,0">
+                    <ListView x:Name="listOfUsers" Margin="10">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <WrapPanel>
+                                    <TextBlock Text="ID:" FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text="{Binding id_pic}" FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text=", название картины: " FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text="{Binding Nazvanie}" FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text=", автор: " FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text="{Binding Avtor}" FontWeight="Bold">
+                                    </TextBlock>
+                                    <TextBlock Text=", дата поступления картины: " FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text="{Binding Dat}" FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text=", время поступления картины: " FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text="{Binding Vremya}" FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text=", наличие картины: " FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text="{Binding Nalichie}" FontWeight="Bold"></TextBlock>
+                                </WrapPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>

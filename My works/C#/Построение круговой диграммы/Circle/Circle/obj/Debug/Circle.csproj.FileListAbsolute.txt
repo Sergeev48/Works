@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\4Semstr\laba\Circle\Circle\bin\Debug\Circle.exe.config
+C:\Users\User\Desktop\4Semstr\laba\Circle\Circle\bin\Debug\Circle.exe
+C:\Users\User\Desktop\4Semstr\laba\Circle\Circle\bin\Debug\Circle.pdb
+C:\Users\User\Desktop\4Semstr\laba\Circle\Circle\obj\Debug\Circle.csprojAssemblyReference.cache
+C:\Users\User\Desktop\4Semstr\laba\Circle\Circle\obj\Debug\Circle.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\4Semstr\laba\Circle\Circle\obj\Debug\Circle.exe
+C:\Users\User\Desktop\4Semstr\laba\Circle\Circle\obj\Debug\Circle.pdb
+C:\Users\79042\OneDrive\Рабочий стол\Circle\Circle\bin\Debug\Circle.exe.config
+C:\Users\79042\OneDrive\Рабочий стол\Circle\Circle\bin\Debug\Circle.exe
+C:\Users\79042\OneDrive\Рабочий стол\Circle\Circle\bin\Debug\Circle.pdb
+C:\Users\79042\OneDrive\Рабочий стол\Circle\Circle\obj\Debug\Circle.csproj.AssemblyReference.cache
+C:\Users\79042\OneDrive\Рабочий стол\Circle\Circle\obj\Debug\Circle.csproj.CoreCompileInputs.cache
+C:\Users\79042\OneDrive\Рабочий стол\Circle\Circle\obj\Debug\Circle.exe
+C:\Users\79042\OneDrive\Рабочий стол\Circle\Circle\obj\Debug\Circle.pdb

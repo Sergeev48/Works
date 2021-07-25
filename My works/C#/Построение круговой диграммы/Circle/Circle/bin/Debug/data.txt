@@ -1,0 +1,11 @@
+5
+25
+Toyota
+30
+Audi
+10
+Skoda
+12
+Nissan
+23
+Opel
